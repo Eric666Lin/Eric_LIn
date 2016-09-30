@@ -44,14 +44,14 @@ public class APLab_04
 		form.format(item6, price6);
 		
 		System.out.println("\n__________________________________________");
-		System.out.println("\n * Thanks for shopping *");
+		System.out.println("\n * Thanks for your support *");
 		
 		
 	}
 	public void format(String item, double price)
 	{
 		
-		System.out.printf("\n*\t%20s ........ \t%10.2f", item, price);
+		System.out.printf("\n*\t%20s ...............\t%10.2f", item, price);
 	}
 	
 
