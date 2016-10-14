@@ -6,15 +6,15 @@ public class Cube
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.println("Enter the length of one side of your cube");
-		double side = keyboard.nextDouble();
+		double s = keyboard.nextDouble();
 		 
-		double sa = Cube.calcSurf (side);
-		System.out.printf("The cube with the sides %.2f has a surface area of %.2f",side,sa);
+		double sa = Cube.calcSurf (s);
+		System.out.printf("The cube with the sides %.2f has a surface area of %.2f",s,sa);
 	}
 	
-	public static double calcSurf(double side)
+	public static double calcSurf(double s)
 	{
-		return 6* (Math.pow (side, 2));
+		return 6* (s*s) ;
 	}
 
 }
