@@ -4,54 +4,54 @@ public class Lab_04_Ex_01
 {
 	public static void main(String[]args)
 	{
+		Lab_04_Ex_01 form = new Lab_04_Ex_01();
 		Scanner kb = new Scanner(System.in);
 		
-		Lab_04_Ex_01 form = new Lab_04_Ex_01();
 	
-		System.out.println("Please enter item 1: ");
-		String item1 = kb.nextLine();
-		System.out.println("Please enter the price: ");
-		Double price1 = kb.nextDouble();
+		System.out.println("Please enter product1: ");
+		String product1 = kb.nextLine();
+		System.out.println("Please enter the cost for product1: ");
+		Double cost1 = kb.nextDouble();
 		
-		System.out.println("Please enter item 2: ");
-		String item2 = kb.next();
+		System.out.println("Please enter product2: ");
+		String product2 = kb.next();
 		kb.nextLine();
-		System.out.println("Please enter the price: ");
-		Double price2 = kb.nextDouble();
+		System.out.println("Please enter the cost for product2: ");
+		Double cost2 = kb.nextDouble();
 		
-		System.out.println("Please enter item 3: ");
-		String item3 = kb.next();
+		System.out.println("Please enter product3: ");
+		String product3 = kb.next();
 		kb.nextLine();
-		System.out.println("Please enter the price: ");
-		Double price3 = kb.nextDouble();
+		System.out.println("Please enter the cost for product3: ");
+		Double cost3 = kb.nextDouble();
 		
-		String item4 = "Subtotal";
-		Double price4 = price1 + price2 +price3;
-		String item5 = "Tax";
-		Double price5 = price4 * 0.08665;
-		String item6 = "Total";
-		Double price6 = price4 + price5;
+		String product4 = "Subtotal";
+		Double cost4 = cost1 + cost2 +cost3;
+		String product5 = "Tax";
+		Double cost5 = cost4 * 0.08665;
+		String product6 = "Total";
+		Double cost6 = cost4 + cost5;
 		
 		
 		System.out.println("\n<<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>>>");
 		
-		form.format(item1, price1);
-		form.format(item2, price2);
-		form.format(item3, price3);
+		form.format(product1, cost1);
+		form.format(product2, cost2);
+		form.format(product3, cost3);
 		
-		form.format(item4, price4);
-		form.format(item5, price5);
-		form.format(item6, price6);
+		form.format(product4, cost4);
+		form.format(product5, cost5);
+		form.format(product6, cost6);
 		
 		System.out.println("\n__________________________________________");
-		System.out.println("\n * Thanks for your support *");
+		System.out.println("\n * Thank you for shopping at walmart, please come again *");
 		
 		
 	}
-	public void format(String item, double price)
+	public void format(String product, double cost)
 	{
 		
-		System.out.printf("\n*\t%20s ...............\t%10.2f", item, price);
+		System.out.printf("\n*\t%20s ...............\t%10.2f", product, cost);
 	}
 	
 

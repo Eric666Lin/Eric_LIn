@@ -1,10 +1,8 @@
-import java.util.Scanner; //import Statement
-
+import java.util.Scanner; 
 public class Ex_03
 {
 	public static void main(String[]args)
 	{
-		//instantiate the new Scanner object "keyboard"
 		Scanner keyboard = new Scanner(System.in);
 		
 		System.out.println(" Hi, I will calculate the area of a your triangle. ");

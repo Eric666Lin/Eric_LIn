@@ -7,9 +7,11 @@ public class Lab_02_02
 		String address = "Home Address";
 		String city = "City";
 		String zip = "Zip Code";
+		String state = "State";
+		
 		System.out.println(name);
 		System.out.println(address);
-		System.out.println(city + " , " +zip);
+		System.out.println(city + " , " + state + " "+ zip);
 		
 		
 	}

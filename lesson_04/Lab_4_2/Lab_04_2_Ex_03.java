@@ -19,10 +19,10 @@ public class Lab_04_2_Ex_03
 	}
 	public static void calcSurf() 
 	{
-		surfaceArea =  6 * side * side;
+		surfaceArea =  6 * (side * side);
 	}
 	public static void print() 
 	{
-		System.out.printf("The cube with the sides %.2f has a surface area of %.2f.\n", side, surfaceArea);
+		System.out.printf("The cube with the sides %.2f has a surface area of %.2f\n", side, surfaceArea);
 	}
 }
