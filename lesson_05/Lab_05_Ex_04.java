@@ -1,17 +1,18 @@
 import java.util.Scanner;
 public class Lab_05_Ex_04
 {
-	static double hight;
-	static double wight;
-	static double bmi;
 	static String condition;
+	static double height;
+	static double bmi;
+	static double weight;
+	
 	public static void main(String[]args)
 	{
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter your height in inches: ");
-		hight = kb.nextDouble();
+		height = kb.nextDouble();
 		System.out.println("Please enter your weight in pounds: ");
-		wight = kb.nextDouble();
+		weight = kb.nextDouble();
 		
 		calcCondition();
 		
@@ -21,7 +22,7 @@ public class Lab_05_Ex_04
 	}
 	public static void calcCondition()
 	{
-	     bmi = wight / (hight*hight);
+	     bmi = weight / height/ height *703;
 		if(bmi < 18.5)
 			condition = "Underweight";
 		else if(bmi < 24.9)
