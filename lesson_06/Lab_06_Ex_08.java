@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Lab_06_Ex_08
 {
 	public static void main(String[]args)
+	
 	{
 		sing("Na",4);
 		System.out.println();

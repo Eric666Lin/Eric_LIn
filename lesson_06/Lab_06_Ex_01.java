@@ -4,12 +4,13 @@ public class Lab_06_Ex_01
 {
 	public static void main(String[]args)
 	{
-		Scanner keyboard = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 		
 		System.out.println("Please enter your word.");
-		String word = keyboard.nextLine();
+		String word = kb.nextLine();
 		
-		
+		System.out.println("");
+		System.out.println("");
 
 		for(int i = 0; i < word.length(); i++)
 		{

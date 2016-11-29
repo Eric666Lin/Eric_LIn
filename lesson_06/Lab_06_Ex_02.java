@@ -4,10 +4,10 @@ public class Lab_06_Ex_02
 		
 	public static void main(String[]args)
 	{
-		Scanner keyboard = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter your number.");
 		int factorial = 1;
-		int number = keyboard.nextInt();
+		int number = kb.nextInt();
 		
 	
 		
