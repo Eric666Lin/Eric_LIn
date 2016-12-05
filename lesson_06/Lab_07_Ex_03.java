@@ -6,9 +6,10 @@ public class Lab_07_Ex_03
 	static int rev = 0;
 	public static void main(String[]args)
 	{
-		Scanner keyboard = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter a number.");
-		number = keyboard.nextInt();
+		number = kb.nextInt();
+		
 		getReverse();
 		System.out.println(number + " reversed is " + rev);
 	}
