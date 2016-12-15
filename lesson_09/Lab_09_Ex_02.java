@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Ex9_2
+public class Lab_09_Ex_02
 {
 	public static void main(String[]args)
 	{
