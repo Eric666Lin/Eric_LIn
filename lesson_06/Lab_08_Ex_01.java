@@ -4,10 +4,10 @@ public class Lab_08_Ex_01
 {
 	public static void main(String[]args)
 	{
-		Scanner keyboard = new Scanner(System.in);
+		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter your sentence.");
 		
-		String sentence = keyboard.nextLine();
+		String sentence = kb.nextLine();
 		System.out.println(replace(sentence));
 	}
 	
