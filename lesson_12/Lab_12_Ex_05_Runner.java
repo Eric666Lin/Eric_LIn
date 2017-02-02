@@ -1,32 +1,36 @@
 import java.util.Scanner;
-public class Lab_12_2_Ex_05_Runner
+public class Lab_12_Ex_05_Runner
 {
 	static Scanner keyboard = new Scanner(System.in);
 	private String firstName;
 	private String lastName;
 	private String avatar;
 	private int userID;
-	public Lab_12_2_Ex_05_Runner()
+	
+	public Lab_12_Ex_05_Runner()
 	{
 		firstName = "";
 		lastName = "";
 		avatar = "";
-		userID = (int)(Math.random() * 1000000) + 1;
+		userID = 1 + (int)(Math.random() * 1000000) ;
 	}
-	public Lab_12_2_Ex_05_Runner(String fN, String lN)
+	
+	public Lab_12_Ex_05_Runner(String fN, String lN)
 	{
 		firstName = fN;
 		lastName = lN;
 		avatar = "Undefined";
-		userID = (int)(Math.random() * 1000000) + 1;
+		userID = 1 + (int)(Math.random() * 1000000) ;
 	}
-	public Lab_12_2_Ex_05_Runner(String fN, String lN, String av)
+	
+	public Lab_12_Ex_05_Runner(String fN, String lN, String av)
 	{
 		firstName = fN;
 		lastName = lN;
 		avatar = av;
-		userID = (int)(Math.random() * 1000000) + 1;
+		userID = 1 + (int)(Math.random() * 1000000) ;
 	}
+	
 	public String toString()
 	{
 		return "Customer Info...\nFirst Name: " + firstName +
@@ -34,6 +38,7 @@ public class Lab_12_2_Ex_05_Runner
 								"\nAvatar: " + avatar +
 								"\nUser ID#: " + userID;
 	}
+	
 	public static void main(String[]args)
 	{
 		System.out.println("Please enter your first name.");
@@ -44,15 +49,15 @@ public class Lab_12_2_Ex_05_Runner
 		String decision = keyboard.next();
 		if(decision == "n")
 		{
-			Lab_12_2_Ex_05_Runner Lab_12_2_Ex_05_Runner1 = new Lab_12_2_Ex_05_Runner(fN, lN);
-			System.out.println("\n" + Lab_12_2_Ex_05_Runner1 + "\n");
+			Lab_12_Ex_05_Runner Lab_12_Ex_05_Runner1 = new Lab_12_Ex_05_Runner(fN, lN);
+			System.out.println("\n" + Lab_12_Ex_05_Runner1 + "\n");
 		}
 		else
 		{
 			System.out.println("Please enter your avatar.");
 			String av = keyboard.next();
-			Lab_12_2_Ex_05_Runner Lab_12_2_Ex_05_Runner1 = new Lab_12_2_Ex_05_Runner(fN, lN, av);
-			System.out.println("\n" + Lab_12_2_Ex_05_Runner1 + "\n");
+			Lab_12_Ex_05_Runner Lab_12_Ex_05_Runner1 = new Lab_12_Ex_05_Runner(fN, lN, av);
+			System.out.println("\n" + Lab_12_Ex_05_Runner1 + "\n");
 		}
 	}
 

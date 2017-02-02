@@ -1,11 +1,11 @@
-public class Lab_12_2_Ex_05_Object
+public class Lab_12_Ex_05_Object
 {
 	private String firstname;
 	private String lastname;
 	private String avatar;
 	private String yon;
 	
-	public Lab_12_2_Ex_05_Object()
+	public Lab_12_Ex_05_Object()
 	{
 		firstname = "";
 		lastname = "";
@@ -13,7 +13,7 @@ public class Lab_12_2_Ex_05_Object
 		yon = "";
 	}
 	
-	public Lab_12_2_Ex_05_Object(String fN, String lN, String av, String yn)
+	public Lab_12_Ex_05_Object(String fN, String lN, String av, String yn)
 	{
 		firstname = fN;
 		lastname = lN;
