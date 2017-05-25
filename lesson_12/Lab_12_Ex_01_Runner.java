@@ -6,11 +6,11 @@ public class Lab_12_Ex_01_Runner
 	{
 		Scanner keyboard = new Scanner(System.in);
 		
-		System.out.println("Please input distance:");
+		System.out.println("Enter distance:");
 		int distance = keyboard.nextInt();
-		System.out.println("Please input hours:");
+		System.out.println("Enter hours:");
 		int hours= keyboard.nextInt();
-		System.out.println("Please input minutes:");
+		System.out.println("Enter minutes:");
 		int minutes = keyboard.nextInt();
 		
 		Lab_12_Ex_01_Object object = new Lab_12_Ex_01_Object(distance, hours, minutes);
